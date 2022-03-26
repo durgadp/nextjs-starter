@@ -10,6 +10,7 @@ module.exports = {
       '3xl': '1920px',
     },
     container: {
+      center: true,
       padding: {
         DEFAULT: '1rem',
         sm: '1rem',

@@ -5,7 +5,7 @@ export function Landing() {
   return (
     <div className="mt-36 flex flex-col items-center gap-5 text-white md:gap-3">
       <h4 className="text-4xl font-normal md:text-5xl">Let Ai help your</h4>
-      <h1 className="text-bg-gradient text-center text-7xl font-bold md:text-8xl">
+      <h1 className="text-gradient text-center text-7xl font-bold md:text-8xl">
         MARKETING TEAM
       </h1>
       <p className="max-w-xl text-center text-xl font-normal opacity-70">
