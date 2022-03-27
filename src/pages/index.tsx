@@ -1,4 +1,5 @@
-import { MarketSense,Landing, Features, WrittingPartner } from '@/molecules';
+import { MarketSense,Landing, Features, WrittingPartner, AboutWebsite, IncreaseSales, ContactUs } from '@/molecules';
+import { Reviews } from '@/molecules/dashboard/reviews';
 
 const Dashboard = () => {
   return (
@@ -7,6 +8,10 @@ const Dashboard = () => {
       <MarketSense />
       <Features />
       <WrittingPartner />
+      <AboutWebsite />
+      <IncreaseSales />
+      <Reviews />
+      <ContactUs />
     </div>
   );
 };

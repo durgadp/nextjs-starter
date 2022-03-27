@@ -22,7 +22,7 @@ export function Landing() {
         </ButtonOutlined>
       </div>
 
-      <div className="mt-20">
+      <div className="mt-20 animate-bounce">
         <AngleDownIcon />
       </div>
     </div>
