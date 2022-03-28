@@ -5,62 +5,60 @@ tristique nunc quis id elit. Suspendisse felis, tellus in
 sollicitudin.`;
 const data = [
   {
-    name: "Saul Ramirez",
-    designation: "CEO, Mirrorly",
-    review: review,
+    name: 'Saul Ramirez',
+    designation: 'CEO, Mirrorly',
+    review,
   },
   {
-    name: "Isiah Walls",
-    designation: "Marketing Lead, Zamora",
-    review: review,
+    name: 'Isiah Walls',
+    designation: 'Marketing Lead, Zamora',
+    review,
   },
   {
-    name: "Forest Barrera",
-    designation: "Managing Director, Teri",
-    review: review,
+    name: 'Forest Barrera',
+    designation: 'Managing Director, Teri',
+    review,
   },
   {
-    name: "Ruby Schwartz",
-    designation: "Marketing Intern, Thornton",
-    review: review,
+    name: 'Ruby Schwartz',
+    designation: 'Marketing Intern, Thornton',
+    review,
   },
   {
-    name: "Isaias Martinez",
-    designation: "Head of Marketing, Moore",
-    review: review,
+    name: 'Isaias Martinez',
+    designation: 'Head of Marketing, Moore',
+    review,
   },
   {
-    name: "Deidre Braun",
-    designation: "CEO, Wilbert",
-    review: review,
+    name: 'Deidre Braun',
+    designation: 'CEO, Wilbert',
+    review,
   },
 ];
 export function Reviews() {
   return (
     <div className=" mt-20">
-      <div className=" max-w-xl font-bold text-6xl text-gradient mx-auto text-center mb-6">
-        {" "}
+      <div className=" text-gradient mx-auto mb-6 max-w-xl text-center text-6xl font-bold">
+        {' '}
         Our Customer’s Reviews
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center">
+      <div className="grid justify-center gap-5 md:grid-cols-2 lg:grid-cols-3">
         {data.map((val, ind) => (
           <div key={ind} className="border-gradient max-w-md rounded-3xl">
-            <div className=" bg-black rounded-3xl flex flex-col gap-3 p-6 text-white">
-              <span className=" font-normal opacity-70">
-                {val.review}
-              </span>
+            <div className=" flex flex-col gap-3 rounded-3xl bg-black p-6 text-white">
+              <span className=" font-normal opacity-70">{val.review}</span>
               <div className=" flex items-center gap-3">
                 <div>
-                  {" "}
+                  {' '}
                   <img
-                    className=" rounded-full overflow-hidden"
+                    className=" overflow-hidden rounded-full"
                     src="https://source.unsplash.com/random/46x46?person"
                     alt="user"
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className=" text-gradient font-bold text-xl">
+                  <span className=" text-gradient text-xl font-bold">
                     {val.name}
                   </span>
                   <span className=" text-xs opacity-70">{val.designation}</span>

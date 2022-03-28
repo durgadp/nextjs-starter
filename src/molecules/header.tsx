@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
-import { Popover, Transition } from "@headlessui/react";
+import { Popover, Transition } from '@headlessui/react';
 import {
   BookmarkAltIcon,
   CalendarIcon,
@@ -15,86 +15,86 @@ import {
   SupportIcon,
   ViewGridIcon,
   XIcon,
-} from "@heroicons/react/outline";
-import { ChevronDownIcon } from "@heroicons/react/solid";
+} from '@heroicons/react/outline';
+import { ChevronDownIcon } from '@heroicons/react/solid';
 
-import { classNames } from "@/utils";
+import { classNames } from '@/utils';
 
 const solutions = [
   {
-    name: "Analytics",
+    name: 'Analytics',
     description:
-      "Get a better understanding of where your traffic is coming from.",
-    href: "#",
+      'Get a better understanding of where your traffic is coming from.',
+    href: '#',
     icon: ChartBarIcon,
   },
   {
-    name: "Engagement",
-    description: "Speak directly to your customers in a more meaningful way.",
-    href: "#",
+    name: 'Engagement',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '#',
     icon: CursorClickIcon,
   },
   {
-    name: "Security",
+    name: 'Security',
     description: "Your customers' data will be safe and secure.",
-    href: "#",
+    href: '#',
     icon: ShieldCheckIcon,
   },
   {
-    name: "Integrations",
+    name: 'Integrations',
     description: "Connect with third-party tools that you're already using.",
-    href: "#",
+    href: '#',
     icon: ViewGridIcon,
   },
   {
-    name: "Automations",
+    name: 'Automations',
     description:
-      "Build strategic funnels that will drive your customers to convert",
-    href: "#",
+      'Build strategic funnels that will drive your customers to convert',
+    href: '#',
     icon: RefreshIcon,
   },
 ];
 const callsToAction = [
-  { name: "Watch Demo", href: "#", icon: PlayIcon },
-  { name: "Contact Sales", href: "#", icon: PhoneIcon },
+  { name: 'Watch Demo', href: '#', icon: PlayIcon },
+  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
 ];
 const resources = [
   {
-    name: "Help Center",
+    name: 'Help Center',
     description:
-      "Get all of your questions answered in our forums or contact support.",
-    href: "#",
+      'Get all of your questions answered in our forums or contact support.',
+    href: '#',
     icon: SupportIcon,
   },
   {
-    name: "Guides",
+    name: 'Guides',
     description:
-      "Learn how to maximize our platform to get the most out of it.",
-    href: "#",
+      'Learn how to maximize our platform to get the most out of it.',
+    href: '#',
     icon: BookmarkAltIcon,
   },
   {
-    name: "Events",
+    name: 'Events',
     description:
-      "See what meet-ups and other events we might be planning near you.",
-    href: "#",
+      'See what meet-ups and other events we might be planning near you.',
+    href: '#',
     icon: CalendarIcon,
   },
   {
-    name: "Security",
-    description: "Understand how we take your privacy seriously.",
-    href: "#",
+    name: 'Security',
+    description: 'Understand how we take your privacy seriously.',
+    href: '#',
     icon: ShieldCheckIcon,
   },
 ];
 const recentPosts = [
-  { id: 1, name: "Boost your conversion rate", href: "#" },
+  { id: 1, name: 'Boost your conversion rate', href: '#' },
   {
     id: 2,
-    name: "How to use search engine optimization to drive traffic to your site",
-    href: "#",
+    name: 'How to use search engine optimization to drive traffic to your site',
+    href: '#',
   },
-  { id: 3, name: "Improve your customer experience", href: "#" },
+  { id: 3, name: 'Improve your customer experience', href: '#' },
 ];
 
 export function Header() {
@@ -111,7 +111,7 @@ export function Header() {
                 alt=""
               />
             </a>
-            <span className=" ml-3 text-2xl font-bold text-gradient">
+            <span className=" text-gradient ml-3 text-2xl font-bold">
               Markai
             </span>
           </div>
@@ -127,15 +127,15 @@ export function Header() {
                 <>
                   <Popover.Button
                     className={classNames(
-                      open ? "text-white" : "text-gray-500",
-                      "group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-white focus:outline-none"
+                      open ? 'text-white' : 'text-gray-500',
+                      'group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-white focus:outline-none'
                     )}
                   >
                     <span>Solutions</span>
                     <ChevronDownIcon
                       className={classNames(
-                        open ? "text-white" : "text-gray-500",
-                        "ml-2 h-5 w-5 group-hover:text-white"
+                        open ? 'text-white' : 'text-gray-500',
+                        'ml-2 h-5 w-5 group-hover:text-white'
                       )}
                       aria-hidden="true"
                     />
@@ -151,13 +151,13 @@ export function Header() {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                         <div className="relative grid gap-6 bg-black px-5 py-6 sm:gap-8 sm:p-8">
                           {solutions.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-900 text-gray-500 hover:text-white"
+                              className="-m-3 flex items-start rounded-lg p-3 text-gray-500 hover:bg-gray-900 hover:text-white"
                             >
                               <item.icon
                                 className="h-6 w-6 shrink-0 "
@@ -178,7 +178,7 @@ export function Header() {
                           {callsToAction.map((item) => (
                             <div
                               key={item.name}
-                              className="flow-root hover:bg-gray-900 text-gray-500 hover:text-white"
+                              className="flow-root text-gray-500 hover:bg-gray-900 hover:text-white"
                             >
                               <a
                                 href={item.href}
@@ -218,15 +218,15 @@ export function Header() {
                 <>
                   <Popover.Button
                     className={classNames(
-                      open ? "text-white" : "text-gray-500",
-                      "group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-white"
+                      open ? 'text-white' : 'text-gray-500',
+                      'group bg-black rounded-md inline-flex items-center text-base font-medium hover:text-white'
                     )}
                   >
                     <span>More</span>
                     <ChevronDownIcon
                       className={classNames(
-                        open ? "text-white" : "text-gray-500",
-                        "ml-2 h-5 w-5 group-hover:text-white"
+                        open ? 'text-white' : 'text-gray-500',
+                        'ml-2 h-5 w-5 group-hover:text-white'
                       )}
                       aria-hidden="true"
                     />
@@ -242,13 +242,13 @@ export function Header() {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 px-2 sm:px-0">
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black/5">
                         <div className="relative grid gap-6 bg-black px-5 py-6 sm:gap-8 sm:p-8">
                           {resources.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-900 text-gray-500 hover:text-white"
+                              className="-m-3 flex items-start rounded-lg p-3 text-gray-500 hover:bg-gray-900 hover:text-white"
                             >
                               <item.icon
                                 className="h-6 w-6 shrink-0"
@@ -278,7 +278,7 @@ export function Header() {
                                 >
                                   <a
                                     href={post.href}
-                                    className="font-medium hover:bg-gray-900 text-gray-500 hover:text-white"
+                                    className="font-medium text-gray-500 hover:bg-gray-900 hover:text-white"
                                   >
                                     {post.name}
                                   </a>
@@ -289,10 +289,10 @@ export function Header() {
                           <div className="mt-5 text-sm">
                             <a
                               href="#"
-                              className="font-medium hover:bg-gray-900 text-gray-500 hover:text-white"
+                              className="font-medium text-gray-500 hover:bg-gray-900 hover:text-white"
                             >
-                              {" "}
-                              View all posts{" "}
+                              {' '}
+                              View all posts{' '}
                               <span aria-hidden="true">&rarr;</span>
                             </a>
                           </div>
@@ -304,7 +304,7 @@ export function Header() {
               )}
             </Popover>
           </Popover.Group>
-          <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0 gap-3">
+          <div className="hidden items-center justify-end gap-3 md:flex md:flex-1 lg:w-0">
             <a
               href="#"
               className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-white"
@@ -332,7 +332,7 @@ export function Header() {
       >
         <Popover.Panel
           focus
-          className="z-10 absolute inset-x-0 top-0 origin-top-right p-2 transition md:hidden"
+          className="absolute inset-x-0 top-0 z-10 origin-top-right p-2 transition md:hidden"
         >
           <div className="divide-y-2 divide-gray-50 rounded-lg bg-black shadow-lg">
             <div className="px-5 pt-5 pb-6">
@@ -343,7 +343,7 @@ export function Header() {
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                     alt="Workflow"
                   />
-                  <span className="ml-3 text-2xl font-bold text-gradient">
+                  <span className="text-gradient ml-3 text-2xl font-bold">
                     Markai
                   </span>
                 </div>
@@ -360,7 +360,7 @@ export function Header() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-m-3 flex items-center rounded-md p-3 focus:bg-gray-900 text-gray-500 focus:text-white"
+                      className="-m-3 flex items-center rounded-md p-3 text-gray-500 focus:bg-gray-900 focus:text-white"
                     >
                       <item.icon
                         className="h-6 w-6 shrink-0"
@@ -374,7 +374,7 @@ export function Header() {
                 </nav>
               </div>
             </div>
-            <div className="space-y-6 py-6 px-5 bg-black">
+            <div className="space-y-6 bg-black py-6 px-5">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <a
                   href="#"
@@ -402,20 +402,20 @@ export function Header() {
               <div className="flex justify-center">
                 <a
                   href="#"
-                  className="flex w-full items-center justify-end rounded-md border border-transparent  px-4 py-2 text-base font-medium text-gray-500 focus:text-white shadow-sm "
+                  className="flex w-full items-center justify-end rounded-md border border-transparent  px-4 py-2 text-base font-medium text-gray-500 shadow-sm focus:text-white "
                 >
                   Sign up
                 </a>
                 <a
                   href="#"
-                  className="flex w-full items-center justify-start rounded-md border border-transparent  px-4 py-2 text-base font-medium text-gray-500 focus:text-white shadow-sm "
+                  className="flex w-full items-center justify-start rounded-md border border-transparent  px-4 py-2 text-base font-medium text-gray-500 shadow-sm focus:text-white "
                 >
                   Sign in
                 </a>
               </div>
               <div>
-                <p className="block mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{" "}
+                <p className="mt-6 block text-center text-base font-medium text-gray-500">
+                  Existing customer?{' '}
                   <a href="#" className="text-white focus:bg-gray-900">
                     Sign in
                   </a>
