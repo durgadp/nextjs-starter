@@ -154,8 +154,8 @@ export function LinkdinIcon() {
           y2="50.5576"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00F0FF" />
-          <stop offset="1" stop-color="#5773FF" />
+          <stop stopColor="#00F0FF" />
+          <stop offset="1" stopColor="#5773FF" />
         </linearGradient>
       </defs>
     </svg>
@@ -184,8 +184,8 @@ export function FacebookIcon() {
           y2="50.5576"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00F0FF" />
-          <stop offset="1" stop-color="#5773FF" />
+          <stop stopColor="#00F0FF" />
+          <stop offset="1" stopColor="#5773FF" />
         </linearGradient>
       </defs>
     </svg>
@@ -214,8 +214,8 @@ export function InstagramIcon() {
           y2="50.5465"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00F0FF" />
-          <stop offset="1" stop-color="#5773FF" />
+          <stop stopColor="#00F0FF" />
+          <stop offset="1" stopColor="#5773FF" />
         </linearGradient>
       </defs>
     </svg>
@@ -244,8 +244,8 @@ export function TwitterIcon() {
           y2="41.1669"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#00F0FF" />
-          <stop offset="1" stop-color="#5773FF" />
+          <stop stopColor="#00F0FF" />
+          <stop offset="1" stopColor="#5773FF" />
         </linearGradient>
       </defs>
     </svg>

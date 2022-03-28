@@ -1,16 +1,23 @@
-export function WrittingPartner(){
-  return(
+export function WrittingPartner() {
+  return (
     <div className=" mt-20">
-      <div className="flex flex-col items-center text-white text-center gap-3">
-        <div className=" text-3xl font-normal">
-        Let’s introduce with
+      <div className="flex flex-col items-center gap-3 text-center text-white">
+        <div className=" text-3xl font-normal">Let’s introduce with</div>
+        <div className=" text-gradient pb-2 text-6xl font-bold">
+          Your Writing Partner!
         </div>
-        <div className=" font-bold text-6xl text-gradient pb-2">Your Writing Partner!</div>
-        <div className=" max-w-xl text-xl opacity-70 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas purus odio tempor rutrum...</div>
+        <div className=" max-w-xl text-xl font-normal opacity-70">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          purus odio tempor rutrum...
+        </div>
       </div>
       <div className="flex justify-center">
-        <img className=" w-full max-w-7xl mt-10" src="/assets/images/video-thumbnail.png" />
+        <img
+          className=" mt-10 w-full max-w-7xl"
+          src="/assets/images/video-thumbnail.png"
+          alt="thumb-nail"
+        />
       </div>
     </div>
-  )
+  );
 }

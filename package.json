@@ -10,12 +10,14 @@
     "build-prod": "run-s clean build export",
     "clean": "rimraf .next out",
     "lint": "next lint",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js --fix",
     "build-types": "tsc --noEmit --pretty",
     "prepare": "husky install"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
+    "@tailwindcss/forms": "^0.5.0",
     "next": "^12.1.0",
     "next-seo": "^5.2.0",
     "react": "^17.0.2",
@@ -23,7 +25,6 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.1.0",
-    "@tailwindcss/forms": "^0.5.0",
     "@types/node": "^17.0.23",
     "@types/react": "^17.0.42",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
