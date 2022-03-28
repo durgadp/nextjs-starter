@@ -47,7 +47,7 @@ export function Features() {
         {data.map((val, ind) => (
           <div
             key={ind}
-            className=" border-gradient group relative z-10 max-w-md overflow-hidden rounded-3xl"
+            className=" cursor-pointer border-gradient group relative z-10 max-w-md overflow-hidden rounded-3xl"
           >
             <div className="flex min-h-[20rem] flex-col justify-center rounded-3xl bg-black p-12 pr-0 2xl:min-h-[16rem] 2xl:p-8">
               <div className="">{val.icon}</div>
@@ -55,7 +55,7 @@ export function Features() {
                 {val.title}
               </div>
             </div>
-            <span className="absolute top-0 left-0 z-10 h-full w-0 rounded-3xl bg-gradient-to-r from-cyan via-blue to-pink opacity-20 transition-all duration-[3000ms] ease-in-out group-hover:w-full"></span>
+            <span className="absolute top-0 left-0 z-10 h-full w-0 rounded-3xl bg-gradient-to-r from-cyan via-blue to-pink opacity-20 transition-all duration-[2500ms] ease-in-out group-hover:w-full"></span>
           </div>
         ))}
       </div>
