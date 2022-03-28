@@ -47,15 +47,17 @@ export function Features() {
         {data.map((val, ind) => (
           <div
             key={ind}
-            className=" cursor-pointer border-gradient group relative z-10 max-w-md overflow-hidden rounded-3xl"
+            className=" border-gradient group relative z-10 max-w-md cursor-pointer overflow-hidden rounded-3xl "
           >
-            <div className="flex min-h-[20rem] flex-col justify-center rounded-3xl bg-black p-12 pr-0 2xl:min-h-[16rem] 2xl:p-8">
-              <div className="">{val.icon}</div>
-              <div className="mt-3 text-3xl font-bold text-white">
-                {val.title}
+            <div className="rounded-3xl bg-black">
+              <div className="background-linear-gradient flex min-h-[20rem] flex-col justify-center rounded-3xl p-12 pr-0 2xl:min-h-[16rem] 2xl:p-8">
+                <div className="">{val.icon}</div>
+                <div className="mt-3 text-3xl font-bold text-white">
+                  {val.title}
+                </div>
               </div>
+              <span className="absolute top-0 left-0 z-10 h-full w-0 rounded-3xl bg-gradient-to-r from-cyan via-blue to-pink opacity-20 transition-all duration-[2500ms] ease-in-out group-hover:w-full"></span>
             </div>
-            <span className="absolute top-0 left-0 z-10 h-full w-0 rounded-3xl bg-gradient-to-r from-cyan via-blue to-pink opacity-20 transition-all duration-[2500ms] ease-in-out group-hover:w-full"></span>
           </div>
         ))}
       </div>

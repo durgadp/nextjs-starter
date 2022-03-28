@@ -46,22 +46,26 @@ export function Reviews() {
       <div className="grid justify-center gap-5 md:grid-cols-2 lg:grid-cols-3">
         {data.map((val, ind) => (
           <div key={ind} className="border-gradient max-w-md rounded-3xl">
-            <div className=" flex flex-col gap-3 rounded-3xl bg-black p-6 text-white">
-              <span className=" font-normal opacity-70">{val.review}</span>
-              <div className=" flex items-center gap-3">
-                <div>
-                  {' '}
-                  <img
-                    className=" overflow-hidden rounded-full"
-                    src="https://source.unsplash.com/random/46x46?person"
-                    alt="user"
-                  />
-                </div>
-                <div className="flex flex-col">
-                  <span className=" text-gradient text-xl font-bold">
-                    {val.name}
-                  </span>
-                  <span className=" text-xs opacity-70">{val.designation}</span>
+            <div className="rounded-3xl bg-black">
+              <div className=" background-linear-gradient flex flex-col gap-3 rounded-3xl p-6 text-white">
+                <span className=" font-normal opacity-70">{val.review}</span>
+                <div className=" flex items-center gap-3">
+                  <div>
+                    {' '}
+                    <img
+                      className=" overflow-hidden rounded-full"
+                      src="https://source.unsplash.com/random/46x46?person"
+                      alt="user"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className=" text-gradient text-xl font-bold">
+                      {val.name}
+                    </span>
+                    <span className=" text-xs opacity-70">
+                      {val.designation}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
